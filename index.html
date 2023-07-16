@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BALLINA</title>
+<link rel="stylesheet" type="text/css" href="style/index.css">
+<link href="https://fonts.googleapis.com/css?family=Khand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background:#e9e9e9;">
+
+  <img src="images/logo2.png" id="logo">
+  <ul class="nav nav-pills nav-justified">
+    <li class="nav-item">
+      <a class="nav-link active linka" href="index.html">BALLINA</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link linka" href="aboutus.html">RRETH NESH</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link linka" href="frebooks.html">LIBRAT FALAS</a>
+     </li>
+    <li class="nav-item">
+      <a class="nav-link linka" href="login.html">KYÇJA</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link linka" href="signup.html">REGJISTRIMI</a>
+    </li>
+  </ul>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div id="pjesa1" class="col-xs-12">
+          <h1 class="ml12">BIBLOTEKA E QYTETIT</h1>
+          <a href="signup.html" style="text-decoration:none;color:white"><p class="p">Regjistrohuni online</p></a>
+          <img src="images/Picture1copy.png" id="imgpjes1"  class="img-responsive">
+        </div>
+    </div>
+    
+
+    
+      <div class="row">
+        <div id="pjesa2" class="col-xs-12">
+          <a href="login.html"><h1 class="titull2">SEKTORI I FEMIJEVE</h1></a>
+          <img src="images/child6.jpg" width="1330px" style="margin-top:0px;margin-left:0px"  class="img-responsive" >
+        </div>
+      </div>
+    
+
+  
+      <div class="row">
+        <div id="pjesa3" class="col-xs-12">
+          <a href="login.html"><h1 class="titull3">SEKTORI I TE RRITURVE</h1></a>
+          <img src="images/adult.jpg" width="1320px"   class="img-responsive img3">
+        </div>
+      </div>
+    
+
+
+    <div class="jumbotron text-center col-xs-12">
+      <p id="footer" > © 2020 Copyright:BS</p>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+     <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+     <a href="https://unsplash.com/">Resources - Unsplash</a>
+    </div>
+</div>
+<script>
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+  </script>
+</body>
+</html>

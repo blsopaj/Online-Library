@@ -1,0 +1,184 @@
+*{
+	font-family: 'Khand', sans-serif;
+	margin:0 auto;
+}
+
+ul
+{
+	background:#e9e9e9;
+	list-style:none;
+	text-decoration:none;
+	letter-spacing:1px;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+
+}
+
+.linka{
+	color:#333;
+text-decoration:none;}
+
+ul .linka:hover
+{
+	color:white;
+	transition:0.5s;
+}
+
+#desktop
+{
+	
+	margin-left:3%;
+	background-color:rgba(221,221,221,0.9);
+	margin-top:3%;
+	width:300px;
+	height:450px;
+	border-radius:5px;
+}
+#imgdesktop
+{
+	border-radius:5px;
+	width:300px;
+	height:250px;
+	margin-left:40%;
+	margin-top:20%;
+}
+.titull
+{
+
+font-weight:500;
+margin-left:5%;
+text-transform:uppercase;
+color:#525256;
+
+}
+#tablet
+{
+	float:center;
+	background-color:rgba(221,221,221,0.9);
+	margin-top:-33%;
+	width:300px;
+	height:450px;
+	margin-left:40%;
+	border-radius:5px;
+}
+#imgtablet
+{
+	width:300px;
+	height:250px;
+	margin-left:30%;
+	margin-top:20%;
+	border-radius:5px;
+}
+#mobile
+{
+	float:right;
+	background-color:rgba(221,221,221,0.9);
+	margin-top:-33%;
+	width:300px;
+	height:450px;
+	margin-right:5%;
+	border-radius:5px;
+}
+#imgmobile
+{
+	width:300px;
+	height:250px;
+	margin-left:40%;
+	margin-top:20%;
+	border-radius:5px;
+}
+#titullh1
+{
+	text-align:center;
+	margin-top:10%;
+	font-size:70px;
+	color:#525256;
+	font-weight:100
+}
+#pjesa2
+{
+	margin-top:10%
+}
+
+.prechildren
+{	
+	font-size:25px;
+	text-align: center;
+	margin-top:10%;
+	color:#525256;
+}
+.preletersi
+{	
+	
+	font-size:25px;
+	text-align: center;
+	margin-top:10%;
+	color:#525256;
+}
+.preclassic
+{
+	
+	font-size:25px;
+	text-align: center;
+	margin-top:10%;
+	color:#525256;
+
+}
+.p
+{
+	margin:5px;
+	text-align:center;
+	padding:10px;
+	font-size:40px;
+	font-weight:100;
+	color:#525256;
+	margin-top:150px;
+	
+}
+
+#footer{color:#333;font-weight:bold}
+
+@media screen and (max-width:576px)
+{
+#desktop{display:none}
+#imgdesktop{display:none}
+
+#tablet{
+display:none
+}
+#imgtablet{display:none}
+
+#mobile{width:280px;margin-top:30px}
+
+#imgmobile{margin-left:40px}
+
+#titullh1
+{
+	font-size:10px;
+	margin-top:120px;
+	justify-content: center;
+}
+#pjesa2{margin-top:100px}
+.prechildren{font-size:20px}
+.preclassic{font-size:20px}
+.preletersi{font-size:20px}
+	
+}
+
+@media screen and (max-width:1024px)
+{
+	
+	#desktop{display:none}
+	#mobile{display:none}
+	
+	#tablet{margin-top:100px;margin-left:250px}
+	#titullh1
+	{
+	font-size:35px;
+
+	}
+
+
+}
+
